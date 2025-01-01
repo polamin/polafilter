@@ -8,7 +8,7 @@
    - Select multi-unique bases that could contain valuable versions.
    - Hide All shit tier
    
-Normal items only show
+**Normal items only show**
    - Amulets, Rings, Belts
 And highlight all expensive normal items
 
