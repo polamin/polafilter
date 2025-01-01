@@ -18,7 +18,7 @@ And highlight all expensive normal items
    
 ### Items Hidden:
 
-1. **Low-Value Currency:**
+**Low-Value Currency:**
    - Scroll of Wisdom
    - Orb of Transmutation
    - Orb of Augmentation
