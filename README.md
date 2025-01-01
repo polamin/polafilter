@@ -1,4 +1,5 @@
   **I don't write it from scratch; I just copy and paste from two sources: NeverSink and CDR**
+  
   **Skill Gems:**
    - Any Skill Gem with Item Level > 19
    - All Support Gem is Hide
