@@ -610,16 +610,26 @@ Show # $type->fragments->tablets $tier->t5
 # Essence of the Infinite         0.1
 
 Show
-  Class == "Stackable Currency"
-  BaseType == "Greater Essence of Torment" "Greater Essence of Haste" "Greater Essence of Ruin"
-  PlayEffect Brown
-  MinimapIcon 1 Brown Circle
+	Class == "Stackable Currency"
+	BaseType == "Greater Essence of Torment" "Greater Essence of Haste" "Greater Essence of Ruin"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35
+	PlayAlertSound 1 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Circle
+	SetFontSize 45
 
 Show
-  Class == "Stackable Currency"
-  BaseType == "Greater Essence of Sorcery" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of the Body" "Greater Essence of Battle" "Greater Essence of the Infinite"
-  PlayEffect Orange
-  MinimapIcon 2 Orange Circle
+	Class == "Stackable Currency"
+	BaseType == "Greater Essence of Sorcery" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of the Body" "Greater Essence of Battle" "Greater Essence of the Infinite"
+	SetTextColor 255 207 92
+	SetBorderColor 255 207 92
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+	SetFontSize 45
 
 Show
   Class == "Stackable Currency"
