@@ -1,4 +1,4 @@
-#### Gems:
+
   **Skill Gems:**
    - Any Skill Gem with Item Level > 19
    - All Support Gem is Hide
