@@ -1,0 +1,1030 @@
+## Divine Orb Style
+Show
+Class "Currency"
+BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+Show
+BaseType == "Distilled Isolation" "Distilled Suffering"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+Class "Currency"
+BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 240 90 35
+PlayAlertSound 1 300
+PlayEffect White
+MinimapIcon 1 Yellow Circle
+SetFontSize 45
+
+# Currency Tier B: Exalt
+Show
+Class "Currency"
+BaseType "Exotic Coinage" "Exalted Orb"
+SetTextColor 255 207 92
+SetBorderColor 255 207 92
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+SetFontSize 45
+
+Show
+BaseType "Gold Key" "Silver Key" "Bronze Key"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 2 White Circle
+SetFontSize 40
+
+# Currency Tier B: Regal, Vaal ...
+Show
+Class "Currency"
+BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 2 White Circle
+SetFontSize 40
+
+Show
+Class "Currency"
+BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 100
+PlayEffect White Temp
+MinimapIcon 1 White Kite
+SetFontSize 35
+
+Show
+Class "Omen"
+BaseType "Omen of"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 76 51 12
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 2 White Circle
+SetFontSize 40
+
+Show
+	Class "Currency"
+	BaseType "Distilled" "Catalyst" "Essence of"
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	SetFontSize 30
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+	AreaLevel >= 70
+	Class "Currency"
+	BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Chance Shard"
+	SetTextColor 220 190 132
+	SetFontSize 35
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+	Class "Currency"
+	BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Chance Shard"
+	SetTextColor 220 190 132
+	MinimapIcon 2 Grey Circle
+	SetFontSize 35
+
+Show
+	BaseType "Simulacrum" " Tablet" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2 300
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
+	SetFontSize 45
+
+
+#######################################################
+##### Highlights
+#######################################################
+
+Show
+  Class == "Amulets" "Rings" "Belts"
+  Rarity Rare
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Kite
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Gold"
+  StackSize >= 10000
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Gold"
+  StackSize >= 2000
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  BaseType "Waystone"
+  WaystoneTier >= 15
+  PlayEffect Orange
+  MinimapIcon 2 Orange Diamond
+  SetFontSize 45
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 4 300
+
+Show
+  BaseType "Waystone"
+  WaystoneTier >= 14
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Diamond
+
+Show
+  BaseType "Waystone"
+  WaystoneTier >= 13
+  PlayEffect White
+  MinimapIcon 2 White Diamond
+
+Show
+  BaseType "Waystone"
+  WaystoneTier >= 10
+
+Hide
+  BaseType "Waystone"
+  WaystoneTier < 10
+
+#######################################################
+##### Dynamic skill gems
+#######################################################
+
+Show
+  BaseType "Skill Gem" "Spirit Gem"
+	ItemLevel > 19
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show
+  BaseType "Skill Gem" "Spirit Gem"
+  ItemLevel == 19
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Hide
+  BaseType "Skill Gem" "Spirit Gem"
+  ItemLevel < 19
+
+Show
+  BaseType "Support Gem"
+  ItemLevel > 4
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  BaseType "Support Gem"
+  ItemLevel == 4
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Hide
+  BaseType "Support Gem"
+  ItemLevel < 4
+
+#######################################################
+##### Regular currency
+#######################################################
+
+# Mirror of Kalandra      ?
+# Perfect Jeweller's Orb  191
+#
+# Divine Orb              50
+# Greater Jeweller's Orb  18
+#
+# Orb of Annulment        3
+# Orb of Chance           3
+# Chaos Orb               2
+# Gemcutter's Prism       2
+# Exalted Orb             1
+
+# Orb of Alchemy          0.5
+# Vaal Orb                0.4
+# Glassblower's Bauble    0.4
+# Regal Orb               0.3
+# Artificer's Orb         0.2
+# Lesser Jeweller's Orb   0.12
+#
+# Armourer's Scrap        0.25
+# Arcanist's Etcher       0.2
+# Blacksmith's Whetstone  0.1
+#
+# Orb of Transmutation    0.01
+# Orb of Augmentation     0.001
+# Transmutation Shard     0.001
+# Regal Shard             0.05
+# Chance Shard            0.015
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Mirror of Kalandra" "Perfect Jeweller's Orb"
+  PlayEffect Purple
+  MinimapIcon 0 Purple Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Greater Jeweller's Orb" "Divine Orb"
+  PlayEffect Brown
+  MinimapIcon 1 Brown Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Exalted Orb"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Orb of Annulment" "Chaos Orb" "Orb of Alchemy" "Gemcutter's Prism" "Orb of Chance"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Regal Orb" "Vaal Orb" "Artificer's Orb" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
+
+
+#######################################################
+##### Trials
+#######################################################
+
+Show
+	BaseType == "Djinn Barya" "Inscribed Ultimatum"
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Diamond
+
+#######################################################
+##### Charms
+#######################################################
+
+Show
+  Class == "Charms"
+  BaseType == "Thawing Charm" "Amethyst Charm" "Golden Charm"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#######################################################
+##### Jewels
+#######################################################
+
+Show
+  Class == "Jewels"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#######################################################
+##### Sanctum
+#######################################################
+
+Show
+  Class == "Relics"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Gold Key"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Silver Key"
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Bronze Key"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#######################################################
+##### Delirium
+#######################################################
+
+# Distilled Isolation  205
+# Simulacrum           108
+# Distilled Suffering  71
+#
+# Distilled Fear       23
+#
+# Distilled Despair    8
+# Distilled Disgust    6
+#
+# Distilled Envy       2
+# Distilled Paranoia   1
+#
+# Distilled Greed      0.3
+# Simulacrum Splinter  0.3
+# Distilled Guilt      0.1
+# Distilled Ire        0.05
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Distilled Isolation" "Simulacrum" "Distilled Suffering"
+  PlayEffect Purple
+  MinimapIcon 0 Purple Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Distilled Fear"
+  PlayEffect Brown
+  MinimapIcon 1 Brown Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Distilled Despair" "Distilled Disgust"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Distilled Envy" "Distilled Paranoia"
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Distilled Greed" "Simulacrum Splinter" "Distilled Guilt" "Distilled Ire"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType "Distilled" # Safety Catch-all
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#######################################################
+##### Breach
+#######################################################
+
+# Breachstone           38
+#
+# Esh's Catalyst        0.3
+# Neural Catalyst       0.3
+# Reaver Catalyst       0.2
+# Chayula's Catalyst    0.2
+# Tul's Catalyst        0.2
+# Xoph's Catalyst       0.15
+# Breach Splinter       0.15
+#
+# Adaptive Catalyst     0.1
+# Flesh Catalyst        0.1
+# Skittering Catalyst   0.1
+# Sibilant Catalyst     0.07
+# Uul-Netol's Catalyst  0.05
+# Carapace Catalyst     0.05
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Breachstone"
+	PlayEffect Brown
+	MinimapIcon 1 Brown Circle
+  
+Show # 82 Breach Ring
+	Mirrored False
+	Corrupted False
+	Rarity Normal
+	BaseType == "Breach Ring"
+	ItemLevel >= 82
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35
+	PlayAlertSound 1 300
+	PlayEffect White
+	MinimapIcon 1 White Circle
+	SetFontSize 45
+	
+Show # White Breach Ring
+	Mirrored False
+	Corrupted False
+	Rarity Normal
+	BaseType == "Breach Ring"
+	ItemLevel < 82
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+	SetFontSize 35
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Esh's Catalyst" "Neural Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Xoph's Catalyst" "Breach Splinter"
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Adaptive Catalyst" "Flesh Catalyst" "Skittering Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Carapace Catalyst"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType "Catalyst" # Safety Catch-all
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  
+#===============================================================================================================
+# [[3300]] Fragments
+#===============================================================================================================
+
+#------------------------------------
+#   [3301] Exceptions
+#------------------------------------
+
+Show # pinnacle keys, basetypes are bugged
+	Class == "Pinnacle Keys"
+	#BaseType == "Ancient Crisis Fragment" "Faded Crisis Fragment" "Weathered Crisis Fragment"
+	SetFontSize 45
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+  
+ 
+
+Show # $type->fragments $tier->t1
+	Class == "Map Fragments"
+	BaseType == "An Audience With the King" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Simulacrum" "Breachstone"
+	SetFontSize 45
+	SetTextColor 180 0 255 255
+	SetBorderColor 180 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+#######################################################
+##### Expedition
+#######################################################
+
+Show
+  Class == "Expedition Logbooks"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Exotic Coinage"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType "Artifact"
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+#######################################################
+##### Essences
+#######################################################
+
+# Greater Essence of Torment      26
+# Greater Essence of Haste        23
+# Greater Essence of Ruin         15
+#
+# Greater Essence of Sorcery      10
+# Greater Essence of Electricity  9
+# Greater Essence of Enhancement  8
+# Greater Essence of Flames       6
+# Greater Essence of Ice          6
+# Greater Essence of the Mind     5
+# Greater Essence of the Body     4
+# Greater Essence of Battle       3
+# Greater Essence of the Infinite 3
+#
+# Essence of Torment              1
+# Essence of Ruin                 1
+# Essence of Haste                1
+#
+# Essence of Electricity          0.4
+# Essence of the Body             0.1
+# Essence of the Mind             0.1
+# Essence of Enhancement          0.2
+# Essence of Flames               0.1
+# Essence of Ice                  0.1
+# Essence of Battle               0.2
+# Essence of Sorcery              0.2
+# Essence of the Infinite         0.1
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Greater Essence of Torment" "Greater Essence of Haste" "Greater Essence of Ruin"
+  PlayEffect Brown
+  MinimapIcon 1 Brown Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Greater Essence of Sorcery" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of the Body" "Greater Essence of Battle" "Greater Essence of the Infinite"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Essence of Torment" "Essence of Ruin" "Essence of Haste"
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType == "Essence of Sorcery" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of the Mind" "Essence of the Body" "Essence of Battle" "Essence of the Infinite"
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  Class == "Stackable Currency"
+  BaseType "Essence" # Safety Catch-all
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#######################################################
+##### Omens
+#######################################################
+
+# Omen of Whittling             112
+# Omen of Sinistral Erasure     ?
+# Omen of Dextral Erasure       ?
+# Omen of Sinistral Annulment   ?
+# Omen of Dextral Annulment     ?
+#
+# Omen of Amelioration          17
+# Omen of Corruption            11
+#
+# Omen of Greater Annulment     3
+# Omen of Resurgence            2.5
+# Omen of Sinistral Exaltation  2
+# Omen of Dextral Exaltation    2
+# Omen of Greater Exaltation    1.5
+# Omen of Sinistral Alchemy     1.5
+# Omen of Refreshment           1
+# Omen of Dextral Alchemy       1
+# Omen of Sinistral Coronation  1
+#
+# Omen of Dextral Coronation    0.5
+
+Show
+  Class == "Omen"
+  BaseType == "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+  PlayEffect Purple
+  MinimapIcon 0 Purple Circle
+
+Show
+  Class == "Omen"
+  BaseType == "Omen of Amelioration" "Omen of Corruption"
+  PlayEffect Brown
+  MinimapIcon 1 Brown Circle
+
+Show
+  Class == "Omen"
+  BaseType == "Omen of Greater Annulment" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Exaltation" "Omen of Sinistral Alchemy" "Omen of Refreshment" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation"
+  PlayEffect Orange
+  MinimapIcon 2 Orange Circle
+
+Show
+  Class == "Omen"
+  BaseType == "Omen of Dextral Coronation"
+  PlayEffect Yellow
+  MinimapIcon 2 Yellow Circle
+
+Show
+  Class == "Omen" # Safety Catch-all
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#------------------------------------
+#   [2810] Soul Cores
+#------------------------------------
+
+Show # $type->currency->soulcore $tier->t1
+	Class == "Socketable"
+	BaseType == "Soul Core of Azcapa"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show # $type->currency->soulcore $tier->t2
+	Class == "Socketable"
+	BaseType == "Soul Core of Zalatl"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
+
+Show # $type->currency->soulcore $tier->t3
+	Class == "Socketable"
+	BaseType == "Soul Core of Topotante" "Soul Core of Tacati" "Soul Core of Opiloti" "Soul Core of Jiquani"  "Soul Core of Citaqualotl" "Soul Core of Puhuarte" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Quipolatl" "Soul Core of Ticaba"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+Show # %H5 $type->currency->soulcore $tier->t4
+	Class == "Socketable"
+	BaseType == "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi"
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+
+Show # $type->currency->soulcore $tier->restex
+	Class == "Socketable"
+	BaseType "Soul Core of"
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 100 0 100 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+
+
+#===============================================================================================================
+# [[1400]] Chancing Bases
+#===============================================================================================================
+  
+Show # %D1 $type->chancing $tier->hh
+	Mirrored False
+	Corrupted False
+	Rarity Normal
+	BaseType == "Stellar Amulet"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35
+	PlayAlertSound 1 300
+	PlayEffect White
+	MinimapIcon 1 White Circle
+	SetFontSize 45
+
+Show # %D1 $type->chancing $tier->hh
+	Mirrored False
+	Corrupted False
+	Rarity Normal
+	BaseType == "Heavy Belt" "Azure Amulet" "Emerald Ring" "Sapphire Ring"
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+	SetFontSize 35
+	
+
+#------------------------------------
+#   [1304] Max Mod ILVL (81/82/83) Bases
+#------------------------------------
+
+Show #T1 Charms
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 83
+	Rarity Normal Magic Rare
+	BaseType == "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+	SetFontSize 45
+	SetBorderColor 255 30 0 160
+	PlayAlertSound 3 300
+	PlayEffect Red
+	MinimapIcon 0 Red Diamond
+	
+Show #T1 Jewellery
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+	SetFontSize 45
+	SetBorderColor 255 125 0 160
+
+Show #T1 Armour
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+	
+Show #T1 2H Weapons
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+	
+Show #T1 Wands/Staves
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 81
+	Rarity Normal Magic
+	BaseType == "Chiming Staff" "Attuned Wand" "Siphoning Wand"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+Show #T1 Offhand
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Primed Quiver"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+Show #T1 Armour
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+
+#######################################################
+##### Hide stuff
+#######################################################
+
+Hide
+  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  Rarity <= Magic
+ 
+Hide #Hide Rare and lower Staff no one really use
+  Class == "Staves"
+  Rarity <= Rare
+
+
+Hide
+  Class == "Stackable Currency"
+  BaseType == "Scroll of Wisdom"
+
+Hide
+  Class "Flasks"
+  Rarity <= Magic
+
+Hide
+  Class == "Stackable Currency"
+  BaseType == "Gold"
+  StackSize < 500
+
+Hide
+  Class == "Charms"
+  Rarity <= Magic
+  Quality == 0
+
+Hide
+  Class == "Socketable"
+  BaseType "Rune"
+
+Hide
+  Class == "Stackable Currency"
+  BaseType == "Orb of Transmutation" "Orb of Augmentation"
+
+Hide
+  Class == "Stackable Currency"
+  BaseType == "Transmutation Shard" "Regal Shard" "Chance Shard" "Artificer's Shard"
+  
+  
+#===============================================================================================================
+# [[4200]] Uniques
+#===============================================================================================================
+
+#------------------------------------
+#   [4201] Exceptions #1
+#------------------------------------
+
+# Extremely valuable uniques with filterable attributes, currently none
+
+#------------------------------------
+#   [4202] Grade S and A (Tier 1 and 2) uniques
+#------------------------------------
+
+# S Grade: The most valuable uniques, ~25ex to infinity
+Show # $type->uniques $tier->t1
+	Rarity Unique
+	BaseType == "Ring" "Diamond" "Emerald Ring" "Gold Amulet" "Ultimate Mana Flask" "Utility Belt" "Incense Relic" "Smuggler Coat" "Sapphire" "Furtive Wraps" "Emerald" "Ultimate Life Flask" "Ornate Belt" "Vase Relic" "Time-Lost Diamond" "Ruby" "Armoured Cap" "Grand Regalia" "Stone Tower Shield" "Timeless Jewel" "Wyrm Quarterstaff" "Crucible Tower Shield" "Fine Bracers" "Conqueror Plate"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+# A Grade: High value uniques, ~10ex to ~20ex
+Show # $type->uniques $tier->t2
+	Rarity Unique
+	BaseType == "Feathered Tiara" "Spiked Club" "Felt Cap" "Burnished Gauntlets" "Brimmed Helm" "Heavy Crown" "Altar Robe" "Dualstring Bow"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Yellow Star
+
+#------------------------------------
+#   [4203] Exceptions #2
+#------------------------------------
+
+# Valuable, unusual uniques with filterable attributes, currently none
+
+#------------------------------------
+#   [4204] Multi-Unique bases
+#------------------------------------
+
+# Multiple uniques sharing the same base: very valuable uniques (S grade) AND cheap uniques. The filter can't say which one dropped. Always check these! There's a small chance for these to be very expensive
+Show # $type->uniques $tier->multispecialhigh
+	Rarity Unique
+	BaseType == "Heavy Belt" "Stellar Amulet" "Sapphire Ring" "Amethyst Ring" "Jade Amulet" "Tribal Mask" "Solar Amulet" "Azure Amulet" "Gold Ring"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 120 150 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Star
+
+# Multiple uniques sharing the same base: somewhat valuable uniques (A grade) AND cheap uniques.
+Show # $type->uniques $tier->multispecial
+	Rarity Unique
+	BaseType == "Topaz Ring" "Crimson Amulet" "Pearl Ring" "Lazuli Ring" "Amber Amulet"
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 194 135 59
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 2 300
+	PlayEffect Blue
+	MinimapIcon 2 Blue Star
+
+Show # %D5 $type->uniques $tier->enchanteduniques
+	AnyEnchantment True
+	Rarity Unique
+	Class == "Amulets" "Rings" "Belts" "Charms" "Body Armours" "Boots" "Gloves" "Helmets" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Quivers" "Shields" "Foci" "Life Flasks" "Mana Flasks" "Jewels"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 255 0 0 239
+	SetBackgroundColor 53 13 13 255
+	PlayEffect Red
+	MinimapIcon 2 Red Star
+	PlayAlertSound 3 300
+
+Show # %D5 $type->uniques $tier->extra2socketuniques
+	Sockets > 1
+	Rarity Unique
+	Class == "Boots" "Gloves" "Helmets" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Shields" "Foci"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 255 0 0 239
+	SetBackgroundColor 53 13 13 255
+	PlayEffect Red
+	MinimapIcon 2 Red Star
+	PlayAlertSound 3 300
+
+Show # %D5 $type->uniques $tier->extra3socketuniques
+	Corrupted True
+	Sockets > 2
+	Rarity Unique
+	Class == "Body Armours" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 255 0 0 239
+	SetBackgroundColor 53 13 13 255
+	PlayEffect Red
+	MinimapIcon 2 Red Star
+	PlayAlertSound 3 300
+
+Show # %D5 $type->uniques $tier->noenchantnosocketuniques
+	Corrupted True
+	Rarity Unique
+	Class == "Amulets" "Rings" "Belts" "Charms" "Body Armours" "Boots" "Gloves" "Helmets" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Quivers" "Shields" "Foci" "Life Flasks" "Mana Flasks" "Jewels"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 255 0 0 239
+	SetBackgroundColor 53 13 13 255
+	PlayEffect Red
+	MinimapIcon 2 Red Star
+	
+#------------------------------------
+#   [4206] B and C Grade (Tier 3) uniques 
+#------------------------------------
+
+# An expensive unique version of this item drops ONLY from bosses! The global drop unique is low value! You can hide this tier, BUT remember to check the hidden items dropped by bosses if you're doing bosses!
+Show # %H5 $type->uniques $tier->t3boss
+	Rarity Unique
+	BaseType == "Silk Robe" "Omen Crest Shield" "Chain Tiara" "Linen Wraps" "Shrine Sceptre" "Explorer Armour"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 53 13 13 255
+
+# B Grade: Mid value uniques, ~2ex to ~9ex with average rolls
+Show # %H4 $type->uniques $tier->t3
+	Rarity Unique
+	BaseType == "Moulded Mitts" "Lattice Sandals" "Closed Helm" "Knight Armour" "Grand Manchettes" "Threaded Shoes" "Grand Visage" "Iron Ring" "Long Quarterstaff" "Spined Bracers" "Spired Greathelm" "Bloodstone Amulet" "Grand Cuisses" "Tattered Robe" "Chiming Staff" "Rope Cuffs" "Lace Hood" "Solid Mask" "Torment Club" "Garment" "Sigil Crest Shield" "Jewelled Gloves"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 53 13 13 255
+	PlayEffect Brown
+	MinimapIcon 2 Brown Star
+	PlayAlertSound 3 300
+
+# C Grade: Low value uniques, 1ex or less, but worth more with good rolls
+Show # %H4 $type->uniques $tier->t4
+	Rarity Unique
+	BaseType == "Feathered Robe" "Pelage Targe" "Layered Gauntlets" "Velour Shoes" "Crude Bow" "Iron Crown" "Vaal Cuirass" "Lunar Amulet" "Gold Circlet" "Covert Hood" "Gauze Wraps" "Shortbow" "Pilgrim Vestments" "Goldcast Cuffs"
+	SetFontSize 35
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 53 13 13 255
+
+  
+# D Grade High: Worthless uniques, but high drop rarity tier, can be slightly risky to hide in the scenario where they become meta suddenly
+Hide # %H3 $type->uniques $tier->hideable2
+	Rarity Unique
+	BaseType == "Seal Relic" "Spiritbone Crown" "Serpentscale Coat" "Tonal Focus" "Coffer Relic" "Effigial Tower Shield" "Martyr Crown" "Long Belt" "Raider Plate" "Secured Leggings" "Crumbling Maul" "Emblem Crest Shield" "Fine Belt" "Marabout Garb" "Champion Cuirass" "Trimmed Greaves" "Hunting Shoes" "Plated Mace" "Riveted Mitts" "Visored Helm" "Rampart Tower Shield" "Votive Raiment" "Ironclad Vestments" "Feathered Sandals" "Pathfinder Coat" "Oak Greathammer" "Fur Plate" "Gilded Vestments" "Amphora Relic" "Scale Mail" "Face Mask" "Tapestry Relic" "Studded Greatclub" "Sombre Gloves" "Doubled Gauntlets" "Pyrophyte Staff" "Braced Sabatons" "Crescent Quarterstaff" "Gelid Staff" "Visceral Quiver" "Wrapped Sandals" "Painted Tower Shield" "Cowled Helm" "Rawhide Belt" "Wide Belt" "Lapis Amulet" "Ruby Ring"
+	SetFontSize 35
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 20 20 0 255
+
+# D Grade Low: Worthless uniques, low drop rarity tier, very safe to hide
+Hide # %H3 $type->uniques $tier->hideable
+	Rarity Unique
+	BaseType == "Broadhead Quiver" "Keth Raiment" "Anchorite Garb" "Wayfarer Jacket" "Wicker Tiara" "Hewn Mask" "Scout's Vest" "Steel Plate" "Aged Cuffs" "Hexer's Robe" "Crystal Focus" "Shielded Helm" "Mail Belt" "Plate Belt" "Linen Belt" "Tense Crossbow" "Rogue Armour" "Mail Sabatons" "Steeltoe Boots" "Maraketh Cuirass" "Forge Maul" "Beaded Circlet" "Smithing Hammer" "Woven Focus" "Blazon Crest Shield" "Hermit Garb" "Hardwood Targe" "Veiled Mask" "Horned Crown" "Warrior Greathelm" "Iron Greaves" "Cultist Crown" "Hunter Hood" "Quilted Vest" "Shaman Mantle" "Hooded Mask" "Wrapped Quarterstaff" "Silk Slippers" "Vagabond Armour" "Recurve Bow" "Bronze Greaves" "Gothic Quarterstaff" "Rusted Cuirass" "Laced Boots" "Jingling Crest Shield" "Elite Greathelm" "Splintered Tower Shield" "Studded Vest" "Guarded Helm" "Soldier Greathelm" "Crescent Targe" "Mail Vestments" "Full Plate" "Suede Bracers" "Rhoahide Coat" "Leather Vest" "Engraved Focus" "Chain Mail" "Twig Circlet" "Braced Tower Shield" "Iron Cuirass" "Slim Mace" "Embossed Boots" "Waxed Jacket" "Shabby Hood" "Ringmail Gauntlets" "Stacked Sabatons" "Torn Gloves" "Bone Wand" "Rough Greaves" "Stone Greaves" "Wrapped Greathelm" "Wooden Club" "Leaden Greathammer" "Twig Focus" "Intricate Gloves" "Sectioned Bracers" "Straw Sandals" "Steelpoint Quarterstaff" "Bone Raiment" "Cloaked Mail" "Fire Quiver" "Lizardscale Boots" "Stitched Gloves" "Ashen Staff" "Voltaic Staff" "Volatile Wand" "Omen Sceptre" "Firm Bracers" "Felled Greatclub" "Attuned Wand" "Tempered Mitts" "Makeshift Crossbow" "Rattling Sceptre" "Rusted Greathelm"
+	SetFontSize 35
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 20 20 0 255
+
+
+#######################################################
+##### Custom Rules
+#######################################################
+
