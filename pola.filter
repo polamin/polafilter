@@ -1090,7 +1090,22 @@ Hide # %H3 $type->uniques $tier->hideable
 	SetBackgroundColor 20 20 0 255
 
 
-#######################################################
-##### Custom Rules
-#######################################################
+#===============================================================================================================
+# [[2400]] Endgame - Rare - Gear
+#===============================================================================================================
+# Try to Hightlight T1 Gears
+Show # t1
+	ItemLevel >= 65
+	Rarity Rare
+	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre" "Attuned Wand" "Siphoning Wand" "Chiming Staff" "Primed Quiver"
+	SetFontSize 45
+	SetBackgroundColor 255 187 0
 
+# Assessories
+Show # t1
+	ItemLevel >= 65
+	Rarity Rare
+	Class == "Amulets" "Rings" "Belts" "Charms"
+	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Gold Amulet" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+	SetFontSize 45
+	SetBackgroundColor 255 187 0
