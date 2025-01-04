@@ -130,11 +130,13 @@ Show
 ##### Highlights
 #######################################################
 
-Show
-	Class == "Amulets" "Rings" "Belts"
-	Rarity Rare
-	PlayEffect Yellow
-	MinimapIcon 2 Yellow Kite
+Show #T1 Jewellery
+	Mirrored False
+	Corrupted False
+	Rarity Normal Magic
+	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
 
 Show
 	Class == "Stackable Currency"
@@ -884,7 +886,6 @@ Hide #Hide Rare and lower Staff no one really use
   Class == "Staves"
   Rarity <= Rare
 
-
 Hide
   Class == "Stackable Currency"
   BaseType == "Scroll of Wisdom"
@@ -1094,6 +1095,7 @@ Hide # %H3 $type->uniques $tier->hideable
 # [[2400]] Endgame - Rare - Gear
 #===============================================================================================================
 # Try to Hightlight T1 Gears
+
 Show # t1
 	ItemLevel >= 65
 	Rarity Rare
@@ -1104,24 +1106,3 @@ Show # t1
 	SetBackgroundColor 76 51 12
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Square
-# Assessories
-Show # t1
-	ItemLevel >= 65
-	Rarity Rare
-	Class == "Amulets" "Rings" "Belts" "Charms"
-	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Gold Amulet" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
-	SetFontSize 45
-	SetTextColor 255 207 92
-	SetBorderColor 0 0 0
-	SetBackgroundColor 76 51 12
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Square
-
-Show #T1 Jewellery Normal Magic
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Gold Amulet" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
-	SetFontSize 40
-	SetBorderColor 255 125 0 160
