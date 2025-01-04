@@ -1,3 +1,7 @@
+  **DOWNLOAD**
+  
+  https://github.com/polamin/polafilter/releases/tag/beta
+  
   **I don't write it from scratch; I just copy and paste from two sources: NeverSink and CDR**
   
   **Skill Gems:**
