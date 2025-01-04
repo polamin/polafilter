@@ -877,7 +877,7 @@ Show #T1 Armour
 #######################################################
 
 Hide
-  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Amulets" "Rings" "Belts"
   Rarity <= Magic
  
 Hide #Hide Rare and lower Staff no one really use
@@ -1116,3 +1116,12 @@ Show # t1
 	SetBackgroundColor 76 51 12
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Square
+
+Show #T1 Jewellery Normal Magic
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal Magic
+	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Gold Amulet" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
