@@ -280,7 +280,7 @@ Show
 
 Show
   Class == "Stackable Currency"
-  BaseType == "Regal Orb" "Vaal Orb" "Artificer's Orb" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
+  BaseType == "Regal Orb" "Vaal Orb" "Artificer's Orb" "Glassblower's Bauble" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"
 
 
 #######################################################
@@ -909,7 +909,7 @@ Hide
 
 Hide
   Class == "Stackable Currency"
-  BaseType == "Orb of Transmutation" "Orb of Augmentation"
+  BaseType == "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb"
 
 Hide
   Class == "Stackable Currency"
