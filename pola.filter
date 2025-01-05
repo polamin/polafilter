@@ -1085,6 +1085,7 @@ Show # t1
 	SetTextColor 255 207 92
 	SetBorderColor 0 0 0
 	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Square
 
