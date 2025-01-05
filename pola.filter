@@ -116,7 +116,7 @@ Show
 	SetFontSize 35
 
 Show
-	BaseType "Simulacrum" " Tablet" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+	BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
 	SetTextColor 255 207 255
 	SetBorderColor 255 207 255
 	SetBackgroundColor 65 20 80
@@ -544,7 +544,7 @@ Show # $type->fragments->tablets $tier->t2
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
-	SetBackgroundColor 76 0 255
+	SetBackgroundColor 195 0 255
 	PlayAlertSound 1 300
 	PlayEffect White
 	MinimapIcon 1 Yellow Hexagon
