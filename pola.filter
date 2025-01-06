@@ -771,7 +771,7 @@ Show # %D1 $type->chancing $tier->hh
 	PlayAlertSound 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
-	SetFontSize 35
+	SetFontSize 45
 	
 
 #------------------------------------
