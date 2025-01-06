@@ -1096,8 +1096,8 @@ Show # t2 Under Testing
 	SetFontSize 30
 	SetTextColor 255 207 92
 	SetBorderColor 0 0 0
-	SetBackgroundColor 199 243 2
+	SetBackgroundColor 93 109 23
 	#PlayAlertSound 2 300
-	PlayEffect Yellow
+	#PlayEffect Yellow
 	#MinimapIcon 1 Yellow Square
 	
