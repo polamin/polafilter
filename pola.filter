@@ -1088,3 +1088,16 @@ Show # t1
 	PlayAlertSound 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Square
+
+Show # t2 Under Testing
+	ItemLevel >= 65
+	Rarity Rare
+	BaseType == "Amethyst Ring" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Construct Hammer" "Expert Crumbling Maul" "Expert Doubled Gauntlets" "Expert Dyad Crossbow" "Expert Edged Buckler" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Warpick" "Expert Zealot Bow" "Omen Sceptre" "Plate Belt" "Prismatic Ring" "Solar Amulet" "Voltaic Staff"
+	SetFontSize 30
+	SetTextColor 255 207 92
+	SetBorderColor 0 0 0
+	SetBackgroundColor 199 243 2
+	#PlayAlertSound 2 300
+	PlayEffect Yellow
+	#MinimapIcon 1 Yellow Square
+	
