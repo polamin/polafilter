@@ -1,0 +1,12 @@
+User
+
+Area
+HideoutCanal
+Seed
+1
+Build
+poe2_production tags/4.1.0e 261626
+OSBits
+64
+CPUBrand
+AMD Ryzen 9 7940HS w/ Radeon 780M Graphics     
