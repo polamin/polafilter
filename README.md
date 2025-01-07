@@ -29,7 +29,6 @@ And highlight all expensive normal items
    - Orb of Augmentation
    - Shards: Transmutation Shard, Regal Shard, Chance Shard, Artificer's Shard
    - Low StackSize Gold (StackSize < 500)
-   - ALL STAFFS
      
 **Highlight Tablets with tiers**
 ![image](https://github.com/user-attachments/assets/ea512de0-ea9b-47b1-8639-9219f639fb53)
