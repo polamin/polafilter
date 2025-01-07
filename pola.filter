@@ -164,11 +164,11 @@ Show
 	BaseType "Waystone"
 	WaystoneTier >= 15
 	PlayEffect Orange
-	MinimapIcon 2 Orange Diamond
 	SetFontSize 45
 	SetTextColor 20 240 240
 	SetBorderColor 20 240 240
 	PlayAlertSound 4 300
+	MinimapIcon 2 Orange Diamond
 
 Show
 	BaseType "Waystone"
