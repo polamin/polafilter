@@ -178,9 +178,13 @@ Show
 
 Show
 	BaseType "Waystone"
-	WaystoneTier >= 13
+	WaystoneTier >= 12
 	PlayEffect White
 	MinimapIcon 2 White Diamond
+
+Hide
+	BaseType "Waystone"
+	WaystoneTier < 12
 
 #######################################################
 ##### Dynamic skill gems
