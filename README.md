@@ -19,7 +19,7 @@ And highlight all expensive normal items
 
 
    **Waystones:**
-   - Show only 10 and above.
+   - Show only 12 and above.
    
 ### Items Hidden:
 
