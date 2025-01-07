@@ -821,16 +821,43 @@ Show #T1 2H Weapons
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
 	
-Show #T1 Wands/Staves
+Show #T1 Staves
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 81
+	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Chiming Staff" "Attuned Wand" "Siphoning Wand"
+	BaseType == "Chiming Staff" 
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
+
+Show #T1 Wands
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Normal
+	BaseType == "Attuned Wand" "Siphoning Wand"
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 129 44 13
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Diamond
+	SetFontSize 45
+
+Show #T1 Wands
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 82
+	Rarity Magic
+	BaseType == "Attuned Wand" "Siphoning Wand"
+	SetFontSize 40
+	SetBorderColor 255 125 0 160
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+	
 
 Show #T1 Offhand
 	Mirrored False
