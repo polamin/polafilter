@@ -839,7 +839,7 @@ Show #T1 Staves
 Show #T1 Wands
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 82
+	ItemLevel >= 81
 	Rarity Normal
 	BaseType == "Attuned Wand" "Siphoning Wand"
 	SetFontSize 45
@@ -854,7 +854,7 @@ Show #T1 Wands
 Show #T1 Wands
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 82
+	ItemLevel >= 81
 	Rarity Magic
 	BaseType == "Attuned Wand" "Siphoning Wand"
 	SetFontSize 40
