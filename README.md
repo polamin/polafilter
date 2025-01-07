@@ -1,6 +1,6 @@
   **DOWNLOAD**
   
-  https://github.com/polamin/polafilter/releases/tag/beta
+  just click pola.filter above
   
   **I don't write it from scratch; I just copy and paste from two sources: NeverSink and CDR**
   
