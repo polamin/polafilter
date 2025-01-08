@@ -825,23 +825,23 @@ Show #T1 2H Weapons
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
 	
-Show #T1 Staves
+Show
 	Mirrored False
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Chiming Staff" 
+	BaseType == "Expert Feathered Sandals" "Primed Quiver"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
-	PlayEffect Blue
-	MinimapIcon 0 Blue Diamond
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Diamond
 
 Show #T1 Wands
 	Mirrored False
 	Corrupted False
 	ItemLevel >= 81
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Chiming Staff"
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255
@@ -850,29 +850,6 @@ Show #T1 Wands
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Diamond
 	SetFontSize 45
-
-Show #T1 Wands
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 81
-	Rarity Magic
-	BaseType == "Attuned Wand" "Siphoning Wand"
-	SetFontSize 40
-	SetBorderColor 255 125 0 160
-	PlayEffect Blue
-	MinimapIcon 0 Blue Diamond
-	
-
-Show #T1 Offhand
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Primed Quiver"
-	SetFontSize 40
-	SetBorderColor 255 125 0 160
-	PlayEffect Blue
-	MinimapIcon 0 Blue Diamond
 
 Show #T1 Armour
 	Mirrored False
@@ -1128,8 +1105,8 @@ Show # t2 Under Testing
 #   [4905] Hide All known Section
 #------------------------------------
 
-Hide # $type->hidelayer $tier->final
-	Class == "Amulets" "Rings" "Belts" "Charms" "Body Armours" "Boots" "Gloves" "Helmets" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Quivers" "Shields" "Foci" "Life Flasks" "Mana Flasks" "Jewels"
+Hide # $type->hidelayer $tier->final Unhide "Amulets" "Rings" 
+	Class == "Belts" "Charms" "Body Armours" "Boots" "Gloves" "Helmets" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Quivers" "Shields" "Foci" "Life Flasks" "Mana Flasks" "Jewels"
 	SetFontSize 18
 	SetBorderColor 0 0 0 0
 	SetBackgroundColor 20 20 0 0
