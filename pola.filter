@@ -841,7 +841,7 @@ Show #T1 Wands
 	Corrupted False
 	ItemLevel >= 81
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Chiming Staff"
+	BaseType == "Attuned Wand" "Siphoning Wand"
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255
