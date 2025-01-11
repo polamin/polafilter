@@ -301,16 +301,6 @@ Hide
 	MinimapIcon 2 Yellow Diamond
 
 #######################################################
-##### Charms
-#######################################################
-
-Show
-  Class == "Charms"
-  BaseType == "Thawing Charm" "Amethyst Charm" "Golden Charm"
-  PlayEffect White
-  MinimapIcon 2 White Circle
-
-#######################################################
 ##### Jewels
 #######################################################
 
@@ -784,17 +774,21 @@ Show # %D1 $type->chancing $tier->hh
 #   [1304] Max Mod ILVL (81/82/83) Bases
 #------------------------------------
 
-Show #T1 Charms
+Show # %D6 $type->endgame->charms $tier->topqualitycharms
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 83
-	Rarity Normal Magic Rare
-	BaseType == "Golden Charm" "Stone Charm" "Thawing Charm" "Dousing Charm" "Antidote Charm"
+	Quality >= 18
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Charms"
+	AreaLevel >= 65
 	SetFontSize 45
-	SetBorderColor 255 30 0 160
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 20 20 0 255
 	PlayAlertSound 3 300
-	PlayEffect Red
-	MinimapIcon 0 Red Diamond
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
 	
 Show #T1 Jewellery
 	Mirrored False
