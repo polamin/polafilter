@@ -3,10 +3,10 @@
 #version:
 #realm:poe2
 #errors:
-#hash:e2063b27fa2300a80d0bf4308e67cf4f
+#hash:3a1c1444627c16fade139431c6e58e84
 #filterVersion:1.1
 #filterType:Normal
-#lastUpdate:2025-01-11T22:52:50Z
+#lastUpdate:2025-01-11T23:23:29Z
 #monthTimeStamp:1501
 # VERSION:  1.1
 
@@ -69,7 +69,7 @@ Show
 # Currency Tier B: Regal, Vaal ...
 Show
 	Class "Currency"
-	BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy"
+	BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -141,6 +141,26 @@ Show
 #######################################################
 ##### Highlights
 #######################################################
+
+Show # %D6 $type->rr->amuring $tier->t1
+	ItemLevel >= 65
+	Rarity Rare
+	Class == "Amulets" "Rings"
+	BaseType == "Amethyst Ring" "Breach Ring" "Prismatic Ring" "Solar Amulet"
+	SetFontSize 42
+	SetBackgroundColor 75 75 0
+	PlayEffect Yellow
+	MinimapIcon 1 White Diamond
+
+Show # %D5 $type->rr->amuring $tier->t2
+	ItemLevel >= 65
+	Rarity Rare
+	Class == "Amulets" "Rings"
+	BaseType == "Amber Amulet" "Azure Amulet" "Bloodstone Amulet" "Gold Amulet" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Lunar Amulet" "Pearl Ring" "Ruby Ring" "Sapphire Ring" "Stellar Amulet" "Topaz Ring" "Unset Ring"
+	SetFontSize 42
+	SetBackgroundColor 75 75 0
+	PlayEffect Yellow
+	MinimapIcon 1 White Diamond
 
 Show #T1 Jewellery
 	Mirrored False
@@ -927,7 +947,7 @@ Hide
 
 Hide
   Class == "Stackable Currency"
-  BaseType == "Transmutation Shard" "Regal Shard" "Chance Shard" "Artificer's Shard"
+  BaseType == "Transmutation Shard" "Regal Shard"  "Artificer's Shard"
   
   
 #===============================================================================================================
