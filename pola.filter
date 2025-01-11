@@ -148,41 +148,63 @@ Show
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 
-Show
-	Class == "Stackable Currency"
+Show # $type->gold $tier->stack3
+	StackSize >= 5000
 	BaseType == "Gold"
-	StackSize >= 10000
-	PlayEffect Yellow
-	MinimapIcon 2 Yellow Circle
-
-Show
-	Class == "Stackable Currency"
-	BaseType == "Gold"
-	StackSize >= 2000
-	PlayEffect White
-	MinimapIcon 2 White Circle
-
-Show
-	BaseType "Waystone"
-	WaystoneTier >= 15
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 20 20 0 255
 	PlayEffect Orange
+	MinimapIcon 1 Yellow Cross
+
+Show # $type->gold $tier->stack2
+	StackSize >= 2500
+	BaseType == "Gold"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	PlayEffect Orange Temp
+	MinimapIcon 1 White Cross
+
+Hide # %H5 $type->gold $tier->stack1
+	StackSize >= 500
+	BaseType == "Gold"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+
+Hide # %H5 $type->gold $tier->stack1lvl
+	StackSize >= 250
+	BaseType == "Gold"
+	AreaLevel < 65
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+
+Hide # %H3 $type->gold $tier->any
+	BaseType == "Gold"
+	SetTextColor 180 180 180
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 20 20 0 180
+
+Show # $type->waystones $tier->waystone_t15
+	WaystoneTier 15
+	Class == "Waystones"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 50 50 50
 	SetFontSize 45
-	SetTextColor 20 240 240
-	SetBorderColor 20 240 240
-	PlayAlertSound 4 300
-	MinimapIcon 2 Orange Diamond
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Red Square
 
 Show
 	BaseType "Waystone"
 	WaystoneTier >= 14
 	PlayEffect Yellow
-	MinimapIcon 2 Yellow Diamond
 
 Show
 	BaseType "Waystone"
 	WaystoneTier >= 12
 	PlayEffect White
-	MinimapIcon 2 White Diamond
 
 Hide
 	BaseType "Waystone"
