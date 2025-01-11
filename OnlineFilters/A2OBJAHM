@@ -1,6 +1,14 @@
-# VERSION:  1.0
-
-# Divine Orb Style
+#Online Item Filter
+#name:pola
+#version:
+#realm:poe2
+#errors:
+#hash:012e546e781849b6eb4f16a096cfa7b9
+#filterVersion:
+#filterType:Normal
+#lastUpdate:2025-01-11T08:36:46Z
+#monthTimeStamp:1501
+## Divine Orb Style
 Show
 	Class "Currency"
 	BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
