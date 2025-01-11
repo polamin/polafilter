@@ -3,14 +3,14 @@
 #version:
 #realm:poe2
 #errors:
-#hash:05a23d89dccee3e1f5375d8652867ad1
-#filterVersion:1.0
+#hash:e776ef8ccb78e4ff5806ae2b721d4fce
+#filterVersion:1.0.1
 #filterType:Normal
-#lastUpdate:2025-01-11T14:06:55Z
+#lastUpdate:2025-01-11T16:34:39Z
 #monthTimeStamp:1501
-# VERSION:  1.0
+# VERSION:  1.0.1
 
-## Divine Orb Style
+# Divine Orb Style
 Show
 	Class "Currency"
 	BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
@@ -853,7 +853,7 @@ Show #T1 Wands
 	Corrupted False
 	ItemLevel >= 81
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Rattling Sceptre"
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255
