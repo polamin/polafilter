@@ -3,10 +3,10 @@
 #version:
 #realm:poe2
 #errors:
-#hash:107d2f2230d7abf7622dac8a6ef081e9
+#hash:e2063b27fa2300a80d0bf4308e67cf4f
 #filterVersion:1.1
 #filterType:Normal
-#lastUpdate:2025-01-11T21:47:48Z
+#lastUpdate:2025-01-11T22:52:50Z
 #monthTimeStamp:1501
 # VERSION:  1.1
 
@@ -201,6 +201,7 @@ Show # $type->waystones $tier->waystone_t15
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 50 50 50
+	SetFontSize 45
 	PlayAlertSound 5 300
 	PlayEffect Yellow
 	MinimapIcon 1 Red Square

@@ -132,6 +132,26 @@ Show
 ##### Highlights
 #######################################################
 
+Show # %D6 $type->rr->amuring $tier->t1
+	ItemLevel >= 65
+	Rarity Rare
+	Class == "Amulets" "Rings"
+	BaseType == "Amethyst Ring" "Breach Ring" "Prismatic Ring" "Solar Amulet"
+	SetFontSize 42
+	SetBackgroundColor 75 75 0
+	PlayEffect Yellow
+	MinimapIcon 1 White Diamond
+
+Show # %D5 $type->rr->amuring $tier->t2
+	ItemLevel >= 65
+	Rarity Rare
+	Class == "Amulets" "Rings"
+	BaseType == "Amber Amulet" "Azure Amulet" "Bloodstone Amulet" "Gold Amulet" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Lunar Amulet" "Pearl Ring" "Ruby Ring" "Sapphire Ring" "Stellar Amulet" "Topaz Ring" "Unset Ring"
+	SetFontSize 42
+	SetBackgroundColor 75 75 0
+	PlayEffect Yellow
+	MinimapIcon 1 White Diamond
+
 Show #T1 Jewellery
 	Mirrored False
 	Corrupted False
