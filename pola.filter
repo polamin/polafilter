@@ -1,4 +1,4 @@
-# VERSION:  1.0
+# VERSION:  1.0.1
 
 # Divine Orb Style
 Show
@@ -843,7 +843,7 @@ Show #T1 Wands
 	Corrupted False
 	ItemLevel >= 81
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Rattling Sceptre"
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255
