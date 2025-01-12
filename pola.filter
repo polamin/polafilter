@@ -81,7 +81,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Distilled" "Catalyst"
+	BaseType "Distilled"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -452,22 +452,6 @@ Show
 ##### Breach
 #######################################################
 
-# Breachstone           38
-#
-# Esh's Catalyst        0.3
-# Neural Catalyst       0.3
-# Reaver Catalyst       0.2
-# Chayula's Catalyst    0.2
-# Tul's Catalyst        0.2
-# Xoph's Catalyst       0.15
-# Breach Splinter       0.15
-#
-# Adaptive Catalyst     0.1
-# Flesh Catalyst        0.1
-# Skittering Catalyst   0.1
-# Sibilant Catalyst     0.07
-# Uul-Netol's Catalyst  0.05
-# Carapace Catalyst     0.05
 
 Show
 	Class == "Stackable Currency"
