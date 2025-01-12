@@ -81,7 +81,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Distilled" "Catalyst" "Essence of"
+	BaseType "Distilled" "Catalyst"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -611,77 +611,90 @@ Show # $type->fragments->tablets $tier->t4
 	MinimapIcon 2 White Hexagon
 
 
-#######################################################
-##### Essences
-#######################################################
+#   [2503] Essences
+#------------------------------------
+# !! Waypoint c9.currency.essences.all : "Tierlist - Essences"
 
-# Greater Essence of Torment      26
-# Greater Essence of Haste        23
-# Greater Essence of Ruin         15
-#
-# Greater Essence of Sorcery      10
-# Greater Essence of Electricity  9
-# Greater Essence of Enhancement  8
-# Greater Essence of Flames       6
-# Greater Essence of Ice          6
-# Greater Essence of the Mind     5
-# Greater Essence of the Body     4
-# Greater Essence of Battle       3
-# Greater Essence of the Infinite 3
-#
-# Essence of Torment              1
-# Essence of Ruin                 1
-# Essence of Haste                1
-#
-# Essence of Electricity          0.4
-# Essence of the Body             0.1
-# Essence of the Mind             0.1
-# Essence of Enhancement          0.2
-# Essence of Flames               0.1
-# Essence of Ice                  0.1
-# Essence of Battle               0.2
-# Essence of Sorcery              0.2
-# Essence of the Infinite         0.1
-
-Show
+Show # $type->currency->essence $tier->s
 	Class == "Stackable Currency"
-	BaseType == "Greater Essence of Torment" "Greater Essence of Haste" "Greater Essence of Ruin"
+	BaseType == "Greater Essence of Haste" "Greater Essence of Sorcery" "Greater Essence of the Infinite"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show # $type->currency->essence $tier->a
+	Class == "Stackable Currency"
+	BaseType == "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Ruin" "Greater Essence of the Mind" "Greater Essence of Torment"
+	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35
+	SetBackgroundColor 245 105 90 255
 	PlayAlertSound 1 300
-	PlayEffect White
-	MinimapIcon 1 Yellow Circle
-	SetFontSize 45
+	PlayEffect Red
+	MinimapIcon 0 Red Circle
 
-Show
+Show # $type->currency->essence $tier->b
 	Class == "Stackable Currency"
-	BaseType == "Greater Essence of Sorcery" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of the Body" "Greater Essence of Battle" "Greater Essence of the Infinite"
-	SetTextColor 255 207 92
-	SetBorderColor 255 207 92
-	SetBackgroundColor 76 51 12
+	BaseType == "Essence of Electricity" "Greater Essence of Battle" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Body"
+	SetFontSize 42
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 245 105 90 255
 	PlayAlertSound 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
+
+Show # $type->currency->essence $tier->c
+	Class == "Stackable Currency"
+	BaseType == "Essence of Haste" "Essence of Torment"
+	SetFontSize 42
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 245 139 87 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Circle
+
+Show # %H6 $type->currency->essence $tier->d
+	Class == "Stackable Currency"
+	BaseType == "Essence of Battle" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of Ruin" "Essence of Sorcery" "Essence of the Body" "Essence of the Infinite" "Essence of the Mind"
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 180 100 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+#Show  # # %H5 $type->currency->essence $tier->e
+#	Class == "Stackable Currency"
+#	SetFontSize 40
+#	SetTextColor 240 207 132
+#	SetBorderColor 240 207 132
+#	PlayEffect White Temp
+#	MinimapIcon 2 Grey Circle
+
+Hide # $type->currency->essence $tier->exhide
+	Class == "Stackable Currency"
+	BaseType == "Essence of Battle" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Haste" "Essence of Ice" "Essence of Ruin" "Essence of Sorcery" "Essence of the Body" "Essence of the Infinite" "Essence of the Mind" "Essence of Torment" "Greater Essence of Battle" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Body"
+	SetFontSize 18
+	SetBackgroundColor 20 20 0 0
+
+Show # $type->currency->essence $tier->restex
+	Class == "Stackable Currency"
+	BaseType "Essence"
 	SetFontSize 45
+	SetTextColor 0 255 255 255
+	SetBorderColor 0 255 255 255
+	SetBackgroundColor 255 0 255 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 0 Pink Pentagon
 
-Show
-  Class == "Stackable Currency"
-  BaseType == "Essence of Torment" "Essence of Ruin" "Essence of Haste"
-  PlayEffect Yellow
-  MinimapIcon 2 Yellow Circle
-
-Show
-  Class == "Stackable Currency"
-  BaseType == "Essence of Sorcery" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of the Mind" "Essence of the Body" "Essence of Battle" "Essence of the Infinite"
-  PlayEffect White
-  MinimapIcon 2 White Circle
-
-Show
-  Class == "Stackable Currency"
-  BaseType "Essence" # Safety Catch-all
-  PlayEffect White
-  MinimapIcon 2 White Circle
 
 #######################################################
 ##### Omens
