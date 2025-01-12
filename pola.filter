@@ -352,8 +352,6 @@ Show
 
 Hide
 	BaseType == "Djinn Barya" "Inscribed Ultimatum"
-	PlayEffect Yellow
-	MinimapIcon 2 Yellow Diamond
 
 #######################################################
 ##### Jewels
