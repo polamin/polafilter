@@ -3,10 +3,10 @@
 #version:
 #realm:poe2
 #errors:
-#hash:3a1c1444627c16fade139431c6e58e84
+#hash:38d05236f5c5c57b9e0a1cb6cb2ff67c
 #filterVersion:1.1
 #filterType:Normal
-#lastUpdate:2025-01-11T23:23:29Z
+#lastUpdate:2025-01-11T23:36:07Z
 #monthTimeStamp:1501
 # VERSION:  1.1
 
@@ -1144,7 +1144,7 @@ Show # t1
 Show # t2 Under Testing
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType == "Amethyst Ring" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Construct Hammer" "Expert Crumbling Maul" "Expert Doubled Gauntlets" "Expert Dyad Crossbow" "Expert Edged Buckler" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Warpick" "Expert Zealot Bow" "Omen Sceptre" "Plate Belt" "Prismatic Ring" "Solar Amulet" "Voltaic Staff" "Breach Ring"
+	BaseType == "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Crumbling Maul" "Expert Doubled Gauntlets" "Expert Dyad Crossbow" "Expert Edged Buckler" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Oak Greathammer" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Zealot Bow" "Omen Sceptre" "Plate Belt" "Voltaic Staff" "Breach Ring" "Expert Feathered Targe"
 	SetFontSize 35
 	SetTextColor 255 207 92
 	SetBackgroundColor 0 0 0
