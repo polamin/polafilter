@@ -3,10 +3,10 @@
 #version:
 #realm:poe2
 #errors:
-#hash:38d05236f5c5c57b9e0a1cb6cb2ff67c
+#hash:09d16b110a2be4b65a8552661b339f3e
 #filterVersion:1.1
 #filterType:Normal
-#lastUpdate:2025-01-11T23:36:07Z
+#lastUpdate:2025-01-12T08:27:12Z
 #monthTimeStamp:1501
 # VERSION:  1.1
 
@@ -169,6 +169,30 @@ Show #T1 Jewellery
 	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Ruby Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" 
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
+
+Show # $type->jewels->generic $tier->anyrare
+	Rarity Rare
+	Class "Jewel"
+	BaseType == "Emerald" "Ruby" "Sapphire"
+	SetFontSize 42
+	SetTextColor 220 220 0
+	SetBorderColor 220 220 0
+	SetBackgroundColor 75 75 0
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Diamond
+
+Show # %H5 $type->jewels->generic $tier->anymagic
+	Rarity Normal Magic
+	Class "Jewel"
+	BaseType == "Emerald" "Ruby" "Sapphire"
+	SetFontSize 42
+	SetTextColor 0 70 255 255
+	SetBorderColor 0 70 255 255
+	SetBackgroundColor 30 0 70 255
+	PlayAlertSound 2 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Diamond
 
 Show
 	Mirrored False

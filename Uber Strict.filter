@@ -2569,24 +2569,6 @@ Show # $type->currency->omen $tier->c
 	PlayEffect White
 	MinimapIcon 1 Yellow Circle
 
-#Show  # # $type->currency->omen $tier->d
-#	Class == "Omen"
-#	SetFontSize 40
-#	SetTextColor 0 0 0 255
-#	SetBorderColor 0 0 0 255
-#	SetBackgroundColor 240 180 100 255
-#	PlayAlertSound 2 300
-#	PlayEffect White
-#	MinimapIcon 2 White Circle
-
-#Show  # # %H5 $type->currency->omen $tier->e
-#	Class == "Omen"
-#	SetFontSize 40
-#	SetTextColor 240 207 132
-#	SetBorderColor 240 207 132
-#	PlayEffect White Temp
-#	MinimapIcon 2 Grey Circle
-
 Hide # $type->currency->omen $tier->exhide
 	Class == "Omen"
 	BaseType == "Omen of Dextral Alchemy" "Omen of Dextral Coronation" "Omen of Dextral Exaltation" "Omen of Greater Annulment" "Omen of Greater Exaltation" "Omen of Refreshment" "Omen of Resurgence" "Omen of Sinistral Alchemy" "Omen of Sinistral Coronation" "Omen of Sinistral Exaltation"
