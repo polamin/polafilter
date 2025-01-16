@@ -3,10 +3,10 @@
 #version:
 #realm:poe2
 #errors:
-#hash:0c5ab10eb02b615841f46c02a9e589e0
+#hash:14ed4a59fe67ee4f63b2c72a6e99e1ae
 #filterVersion:1.1
 #filterType:Normal
-#lastUpdate:2025-01-12T17:19:20Z
+#lastUpdate:2025-01-16T08:55:52Z
 #monthTimeStamp:1501
 # VERSION:  1.1
 
@@ -1001,7 +1001,7 @@ Show #T1 Wands
 	Corrupted False
 	ItemLevel >= 81
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Rattling Sceptre"
+	BaseType == "Attuned Wand" "Siphoning Wand" 
 	SetFontSize 45
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255
@@ -1016,7 +1016,7 @@ Show #T1 Armour
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus"
+	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Rattling Sceptre"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Blue

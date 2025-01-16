@@ -964,12 +964,12 @@ Show #T1 Armour
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
 	
-Show #T1 2H Weapons
+Show #T1 2H Weapons And 1H
 	Mirrored False
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff"
+	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Blue
@@ -1001,16 +1001,6 @@ Show #T1 Wands
 	MinimapIcon 1 Yellow Diamond
 	SetFontSize 45
 
-Show #T1 Armour
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Hunter Hood" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus" "Rattling Sceptre"
-	SetFontSize 40
-	SetBorderColor 255 125 0 160
-	PlayEffect Blue
-	MinimapIcon 0 Blue Diamond
 
 
 #######################################################
