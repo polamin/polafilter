@@ -3,10 +3,10 @@
 #version:
 #realm:poe2
 #errors:
-#hash:27a87ba6ee516a4a9d263bdbb1d53e84
+#hash:0c5ab10eb02b615841f46c02a9e589e0
 #filterVersion:1.1
 #filterType:Normal
-#lastUpdate:2025-01-12T16:17:30Z
+#lastUpdate:2025-01-12T17:19:20Z
 #monthTimeStamp:1501
 # VERSION:  1.1
 
@@ -362,8 +362,6 @@ Show
 
 Hide
 	BaseType == "Djinn Barya" "Inscribed Ultimatum"
-	PlayEffect Yellow
-	MinimapIcon 2 Yellow Diamond
 
 #######################################################
 ##### Jewels
