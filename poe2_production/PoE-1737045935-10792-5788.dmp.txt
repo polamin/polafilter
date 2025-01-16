@@ -1,0 +1,18 @@
+User
+
+Area
+C_G2_4_3
+Seed
+3971100863
+Build
+poe2_production tags/4.1.0f 262188
+OSBits
+64
+CPUBrand
+AMD Ryzen 9 7940HS w/ Radeon 780M Graphics     
+ExtraData
+
+Driver
+32.0.15.6636
+Exception
+
