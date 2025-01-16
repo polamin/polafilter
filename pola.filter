@@ -1,4 +1,4 @@
-# VERSION:  1.1
+# VERSION:  1.2
 
 # Divine Orb Style
 Show
@@ -543,9 +543,20 @@ Show # $type->currency->splinter $tier->t5
 	PlayEffect Purple Temp
 	MinimapIcon 1 White Kite	
 
+Show # %H6 $type->currency->catalysts $tier->c
+	Class == "Stackable Currency"
+	BaseType == "Adaptive Catalyst"
+	SetFontSize 42
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 245 139 87 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Circle
+
 Show # %HS4 $type->currency->catalysts $tier->d
 	Class == "Stackable Currency"
-	BaseType == "Adaptive Catalyst" "Neural Catalyst"
+	BaseType == "Esh's Catalyst" "Neural Catalyst" "Reaver Catalyst" "Skittering Catalyst" "Tul's Catalyst"
 	SetFontSize 40
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -553,7 +564,7 @@ Show # %HS4 $type->currency->catalysts $tier->d
 
 Hide # %HS2 $type->currency->catalysts $tier->e
 	Class == "Stackable Currency"
-	BaseType == "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
+	BaseType == "Carapace Catalyst" "Chayula's Catalyst" "Flesh Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
 	SetFontSize 40
 	SetTextColor 240 207 132
 	SetBorderColor 240 207 132
@@ -656,7 +667,7 @@ Show # $type->fragments->tablets $tier->t4
 
 Show # $type->fragments->tablets $tier->t4
 	Class == "Tablet"
-	BaseType == "Precursor Tablet" "Delirium Precursor Tablet" "Expedition Precursor Tablet"
+	BaseType == "Precursor Tablet" "Delirium Precursor Tablet" "Expedition Precursor Tablet" "Overseer Precursor Tablet"
 	SetFontSize 40
 	SetTextColor 255 207 255
 	SetBorderColor 255 207 255
@@ -969,7 +980,7 @@ Show #T1 2H Weapons And 1H
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre"
+	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre" "Expert Cultist Greathammer"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Blue
