@@ -969,7 +969,7 @@ Show #T1 Armour
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Moulded Mitts" "Expert Spiral Wraps" "Expert Feathered Sandals" "Expert Lizardscale Boots" "Expert Stone Greaves" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Iron Cuirass" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Elite Greathelm" "Expert Tribal Mask" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Crystal Focus" "Expert Plumed Focus"
+	BaseType == "Expert Feathered Sandals" "Expert Hunting Shoes" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Feathered Tiara" "Expert Tribal Mask" "Expert Crystal Focus" "Expert Plumed Focus"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Blue
@@ -980,7 +980,7 @@ Show #T1 2H Weapons And 1H
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Expert Dualstring Bow" "Expert Forlorn Crossbow" "Expert Slicing Quarterstaff" "Rattling Sceptre" "Expert Cultist Greathammer"
+	BaseType == "Expert Dualstring Bow"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Blue
@@ -991,7 +991,7 @@ Show
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Expert Feathered Sandals" "Primed Quiver"
+	BaseType == "Primed Quiver"
 	SetFontSize 40
 	SetBorderColor 255 125 0 160
 	PlayEffect Yellow
@@ -1244,8 +1244,8 @@ Show # $type->uniques $tier->restex
 Show # t1
 	ItemLevel >= 65
 	Rarity Rare
-	BaseType == BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Cultist Greathammer" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
-	SetFontSize 40
+	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Cultist Greathammer" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
+	SetFontSize 4
 	SetTextColor 255 207 92
 	SetBorderColor 0 0 0
 	SetBackgroundColor 76 51 12
